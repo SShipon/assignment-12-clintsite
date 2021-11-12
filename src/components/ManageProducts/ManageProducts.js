@@ -43,7 +43,7 @@ const Manage = () => {
             // const { _id, user, email } = order;
             return (
               <tr key={i?._id}>
-                <td>{i.name}</td>
+                <td>{i.carName}</td>
 
                 <td>${i?.price}</td>
                 <td>{i?.description.slice(0,30)}</td>
