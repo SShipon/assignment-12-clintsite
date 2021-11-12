@@ -5,15 +5,18 @@ This project fullstack project [Create React App](https://assignment-12-clintsit
  ## Available Scripts
 
  ##  firebase
- ##  history
+ ##  Html
+ ##  CSS
+ ##  JavaScript
  ##  react
  ##  react-hook-form
  ##  react-rating
  ##  react-router-dom
+ ##  Bootstrap
+ ##  React Bootstrap
+ ##  Node.js
+ ##  Mongodb
+ ##  
  ##
- ##
- ##
- ##
- ##
- ##
- ##
+ ##  
+                 <!-- Fee Amanillah  -->
