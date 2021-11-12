@@ -11,7 +11,7 @@ const Car = (props) => {
           <h5 className="card-title">{carName}</h5>
           <p className="card-text">{description.slice(0, 120)}</p>
 
-           <h5 className="card-title">{price}</h5>
+           <h5 className="card-title"><span>$</span>{price}</h5>
           <p className="card-text">
             <Link to={`/car/${_id}`}>
               <button className="btn btn-info">Buy Now</button>

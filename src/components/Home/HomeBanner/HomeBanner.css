@@ -1,0 +1,25 @@
+.banner-img {
+    background-image: url(https://i.ibb.co/gDPky6H/68747470733a2f2f7374796c656d69787468656d65732e636f6d2f656e7661746f2f6d6f746f72732f323032312f325f6e65.jpg);
+    background-size: 100% 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h1 {
+    padding: 5px;
+    color: #f5eeee;
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-text p {
+    color: #ffff;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}

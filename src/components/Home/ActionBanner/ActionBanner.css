@@ -1,0 +1,26 @@
+.car-banner {
+    background-color: #c3e6e6;
+    padding: 50px 0;
+}
+.car-banner h1 {
+    margin: 15px 0;
+    font-size: 55px;
+    color: #fffffe;
+}
+.car-banner p {
+    color: #2b2c33;
+}
+.button-style {
+    margin: 15px 0;
+    padding: 18px 40px;
+    color: #fffffe;
+    background-color: black;
+    border-radius: 50px;
+}
+.button-style:hover {
+    background-color: #ff8906;
+    color: #fff;
+}
+.car-banner img {
+    margin-top: 15px;
+}
