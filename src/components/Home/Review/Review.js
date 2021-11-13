@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import SingleReview from '../SingleReview/SingleReview';
 const Review = () => {
   const [reviews, setReviews] = useState([]);
@@ -9,7 +10,8 @@ const Review = () => {
   }, []);
   return (
     <div>
-      <h3 className="text-center my-4">What Customers <span className="text-warning">Say</span></h3>
+     
+      <h3 className="text-center my-4"> <span className="text-info">Customers</span> Review<span className="text-warning"> Say</span></h3>
       <div className="cars-container">
         {reviews.map((review) => (
           <SingleReview
@@ -17,6 +19,7 @@ const Review = () => {
             review={review}
           ></SingleReview>
         ))}
+        <Link to={`/review`}><button type="button" class="btn btn-info">Please Your Review</button></Link>
       </div>
     </div>
   );

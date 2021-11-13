@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
+import './Header.css'
+import logo from '../../images/log/log.png'
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top navar-color">
       <div className="container-fluid col-lg-12">
+       <img  style={{width:"50px", height:"50px", borderRadius:"50%"}} src={logo} alt="" />
         <Link className="navbar-brand" to="/">
           Car <span className="text-warning">Zone</span>
         </Link>
