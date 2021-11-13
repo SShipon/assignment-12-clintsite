@@ -6,7 +6,7 @@ const SingleReview = (props) => {
   return (
     <div>
       <div class="card bg-dark border-light">
-        <div class="card-body">H
+        <div class="card-body">
           <p class="card-text m-0">{user}</p>
           <p class="card-text">
             <small>{email}</small>

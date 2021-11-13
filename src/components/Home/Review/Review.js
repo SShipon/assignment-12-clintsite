@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SingleReview from '../SingleReview/SingleReview';
 const Review = () => {
@@ -19,8 +20,9 @@ const Review = () => {
             review={review}
           ></SingleReview>
         ))}
-        <Link to={`/review`}><button type="button" class="btn btn-info">Please Your Review</button></Link>
+        
       </div>
+      <Link to={`/review`}><Button style={{cursor:'pointer'}} type="button" className="btn btn-info text-center mx-3 mb-3  button">Please Your Review</Button></Link>
     </div>
   );
 };

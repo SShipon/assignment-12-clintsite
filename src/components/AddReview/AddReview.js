@@ -23,8 +23,8 @@ const AddReview = () => {
     reset();
   };
   return (
-    <div className="container my-5">
-      <h5 className="text-center my-3">Feedback <span className="text-warning">Appriciated</span> </h5>
+    <div className="container m-auto">
+      <h5 className="text-center my-6">Feedback <span className="text-warning">Appriciated</span> </h5>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           className="p-2 my-1 w-100"

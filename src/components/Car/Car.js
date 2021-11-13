@@ -14,7 +14,7 @@ const Car = (props) => {
            <h5 className="card-title"><span>$</span>{price}</h5>
           <p className="card-text">
             <Link to={`/car/${_id}`}>
-              <button className="btn btn-info">Buy Now</button>
+              <button className="btn btn-info w-75">Buy Now</button>
             </Link>
           </p>
         </div>

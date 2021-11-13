@@ -6,9 +6,9 @@ import logo from '../../images/log/log.png'
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top navar-color">
+    <nav className="navbar navbar-expand-lg navbar-dark  navar-color">
       <div className="container-fluid col-lg-12">
-       <img  style={{width:"50px", height:"50px", borderRadius:"50%"}} src={logo} alt="" />
+       <img  style={{width:"40px", height:"40px", borderRadius:"50%"}} src={logo} alt="" />
         <Link className="navbar-brand" to="/">
           Car <span className="text-warning">Zone</span>
         </Link>
@@ -84,7 +84,7 @@ const Header = () => {
                   className="nav-link bg-dark rounded px-3 text-white"
                   to="/login"
                 >
-                  SignIn
+                  Sign In
                 </Link>
               </li>
             ) : (

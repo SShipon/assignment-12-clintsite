@@ -12,7 +12,7 @@ const HomeExplore = () => {
   return (
     <div>
       <h3 className="text-center my-4">
-        Top 6 Best Selling <span className="text-warning">Cars</span>
+        Top 6 Best Cars  <span className="text-warning">Selling</span>
       </h3>
       <div className="cars-container">
         {cars.slice(0, 6).map((car) => (
