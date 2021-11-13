@@ -6,7 +6,7 @@ import logo from '../../images/log/log.png'
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark  navar-color">
+    <nav className="navbar navbar-expand-lg navbar-dark  navar-color  sticky-top">
       <div className="container-fluid col-lg-12">
        <img  style={{width:"40px", height:"40px", borderRadius:"50%"}} src={logo} alt="" />
         <Link className="navbar-brand" to="/">
