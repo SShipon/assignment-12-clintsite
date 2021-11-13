@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "./ActionBanner.css"
 const ActionBanner = () => {
     return (
@@ -11,7 +12,11 @@ const ActionBanner = () => {
                         <p>
                          BMW only rent out the most exclusive yachts, which you can find all over dubai. Book Now. Best Luxury Yacht Rental Services In The UAE. You can choose from 21+ different yachts. The Best Family Yachts. Free Jetski. an unforgettable Cheapest Yachts in Dubai. Easy and Cheap Rentals.
                         </p>
-                        <button className="button-style">Click Me...</button>
+                        <p>
+                {" "}
+               <Link to="/explore"><button className="button-style">Click Me...</button></Link>
+              </p>
+                      
                     </Col>
                     <Col md={6} xs={12}>
                         <img

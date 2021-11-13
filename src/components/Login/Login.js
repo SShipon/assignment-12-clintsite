@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Form , Button} from "react-bootstrap";
 import { useHistory, useLocation } from "react-router";
-import { Link } from "react-router-dom";
+import {  Link, NavLink} from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
+import login from "../../images/log/login.jpg";
 
 const Login = () => {
   const { signInWithGoogle, setUser, loginWithEmailAndPassword, setIsLoading } =
@@ -57,7 +59,103 @@ const Login = () => {
   };
 
   return (
-    <div className=" overflow-hidden">
+  
+    <div>
+      <div className="container">
+        <div className="row d-flex align-items-center">
+          <div className="col-md-6 text-center">
+            <h3 className="mb-4 mt-3">
+              <b>Login</b>
+            </h3>
+            <Form onSubmit={handleLoginWithEmailAndPassword}>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control
+                  type="email"
+                  name="email"
+                  onBlur={handleGetEmail}
+                  placeholder="Enter email"
+                />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control
+                  type="password"
+                  name="password"
+                   onBlur={handleGetPassword}
+                  placeholder="Password"
+                />
+              </Form.Group>
+
+              <Button variant="info" className="px-5" type="submit">
+                <b>Submit</b>
+              </Button>
+              <br />
+              <p>
+                {" "}
+                New User? <Link to="/register">Please register</Link>
+              </p>
+            </Form>
+              <br />
+              <p>----- Or Login With -----</p>
+
+              <button
+                className="bg-info px-3 py-1 w-100 rounded my-1"
+                onClick={handleGoogleLogin}
+              >
+                <img
+                  className="img-fluid float-start"
+                  style={{ height: "40px" }}
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRttcAHlykQMvm8VIF8StLe3wTztMVxFe4_eQ&usqp=CAU"
+                  alt=""
+                />
+                Google Sign In
+              </button>
+              <p></p>
+          </div>
+          <div className="col-md-6">
+            <img className="img-fluid" src={login} alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+  );
+};
+
+export default Login;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  <div className=" overflow-hidden">
       <div className="row gx-5">
         <div className="col-lg-6">
           <div className="">
@@ -117,8 +215,4 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Login;
+    </div> */

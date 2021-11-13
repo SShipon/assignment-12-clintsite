@@ -1,0 +1,37 @@
+.experience {
+    padding: 65px 0;
+    
+    background-color: #00412d;
+}
+.experience i {
+    font-size: 45px;
+    margin: 10px 0;
+    color: #19d486;
+}
+.experience h4 {
+    text-align: center;
+    margin: 15px 0;
+    color: #ff8906;
+}
+.experience h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #fffffe;
+}
+.experience-card {
+    text-align: center;
+    background-color: rgb(37, 48, 44);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.experience-card:hover {
+    border: 1px solid #ff8906;
+}
+.experience-card h2 {
+    color: #cea110;
+    margin: 10px 0;
+}
+.experience-card p {
+    color: #fffffe;
+}

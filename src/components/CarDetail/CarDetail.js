@@ -62,7 +62,7 @@ const CarDetail = () => {
           </div>
           <div className="col-lg-6">
             <div className="p-3">
-              <h3>Shipment Form</h3>
+              <h3>Order <span className="text-primary">Now</span></h3>
               <form onSubmit={handleSubmit(onSubmit)}>
                 {/* register your input into the hook by invoking the "register" function */}
                 <input

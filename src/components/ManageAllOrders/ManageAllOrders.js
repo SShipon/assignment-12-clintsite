@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
       <table className="table container table-dark table-stripe">
         <thead className="mx-auto">
           <tr>
-          <th scope="col">Car</th>
+          <th scope="col">CarName</th>
             <th scope="col">Name</th>
             
             <th scope="col">Address</th>
@@ -50,7 +50,7 @@ const ManageAllOrders = () => {
                 <td>
                   <button
                     onClick={() => handleCancel(i?._id)}
-                    className="btn btn-warning"
+                    className="btn text-info"
                   >
                     Cancel
                   </button>
