@@ -17,6 +17,8 @@ import DashBoard from "./components/Dashboard/Dashboard";
 import Pay from "./components/Pay/Pay";
 import Manage from "./components/ManageProducts/ManageProducts";
 import ManageAllOrders from "./components/ManageAllOrders/ManageAllOrders";
+import About from "./components/About/About.js";
+import Contact from "./components/Contact/Contact.js";
 
 function App() {
   return (
@@ -31,11 +33,17 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <Route path="/about">
+             <About></About>
+            </Route>
             <Route path="/addCar">
               <AddCar></AddCar>
             </Route>
             <Route path="/explore">
               <Explore></Explore>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
             </Route>
             <Route path="/login">
               <Login></Login>

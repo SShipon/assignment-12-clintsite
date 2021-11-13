@@ -116,7 +116,6 @@ const Register = () => {
                 Google Sign In
               </button>
 
-              {/* <button onClick={handleGoogleLogin}>Google Sign In</button> */}
               <p>
                 {" "}
                 Signed Up? <Link to="/login">Please Login</Link>

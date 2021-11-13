@@ -31,9 +31,27 @@ const Header = () => {
               <Link
                 className="nav-link active"
                 aria-current="page"
+                to="/about"
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
                 to="/explore"
               >
-                Explore
+              Explore
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/contact"
+              >
+              Contact
               </Link>
             </li>
 
