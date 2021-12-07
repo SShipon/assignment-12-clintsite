@@ -19,9 +19,7 @@ function ContactForm() {
       </Bounce>
 
       <Bounce left>
-        <h3 className="text-center text-muted mb-4">
-          Your Contats page
-        </h3>
+        <h3 className="text-center text-muted mb-4">Your Contact page </h3>
       </Bounce>
       <div>
         <Container>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Car = (props) => {
-  const { _id, carName, img, description,price } = props.car;
+  const { _id, carName, img, description, price } = props.car;
   return (
     <div>
       <div className="card mb-3 bg-dark border-light">
@@ -11,7 +11,10 @@ const Car = (props) => {
           <h5 className="card-title">{carName}</h5>
           <p className="card-text">{description.slice(0, 120)}</p>
 
-           <h5 className="card-title"><span>$</span>{price}</h5>
+          <h5 className="card-title">
+            <span>$</span>
+            {price}
+          </h5>
           <p className="card-text">
             <Link to={`/car/${_id}`}>
               <button className="btn btn-info w-75">Buy Now</button>

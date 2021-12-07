@@ -53,7 +53,7 @@ const CarDetail = () => {
                   <h5 className="card-title">{car?.carName}</h5>
                   <p className="card-text">{car?.description.slice(0, 120)}</p>
                   <p className="card-text">
-                    Price: ${car?.carName}{" "}
+                    Price: ${car?.price}{" "}
                     <span className="text-warning"> with 10% discount</span>
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const CarDetail = () => {
                 <input
                   className="p-2 px-4 m-2"
                   placeholder="Enter your car Name"
-                  defaultValue={car?.name}
+                  defaultValue={car?.carName}
                   {...register("car", { required: true })}
                   required
                 />

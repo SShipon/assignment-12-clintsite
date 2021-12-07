@@ -60,9 +60,9 @@ function App() {
             <Route path="/myOrder">
               <MyOrder></MyOrder>
             </Route>
-            <Route path="/review">
+            <PrivateRoute path="/review">
               <AddReview></AddReview>
-            </Route>
+            </PrivateRoute>
             <Route path="/pay">
               <Pay></Pay>
             </Route>
